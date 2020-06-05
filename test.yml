@@ -1,0 +1,7 @@
+---
+    - name: run task on host
+    hosts: apache
+    tasks:
+        - name: run command with shell
+        shell: echo "hello from shell" > /tmp/shell_outout
+        register: shell_outout 
